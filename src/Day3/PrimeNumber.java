@@ -8,18 +8,18 @@ public class PrimeNumber {
 
 
         int count =0;
-        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in); //scanner class
         System.out.println("Enter the Number= ");
-        int num = sc.nextInt();
+        int num = sc.nextInt(); //scanner class
 
-        for (int i = 1; i<=num; i++) {
+        for (int i = 1; i<=num; i++) { //for loop
 
-            if (num % i == 0){
+            if (num % i == 0){ // if condition
                 count++;
         }
         }
 
-        if (count==2) {
+        if (count==2) { // if condition
 
             System.out.println("The number = " +num + "is a prime number");
         } else {
