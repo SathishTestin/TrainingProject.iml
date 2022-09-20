@@ -8,7 +8,9 @@ public class FibonacciSeries {
         int a2=1; //initialization declaration
         int a3; //initialization declaration
 
-        for (int i=2; i<=10; i++){ //for loop
+        for (int i=2; i<=10; i++){ //for loop using to repeating action
+            // for loop both forwording and backword direction
+            
             a3 =a1+a2;
 
             a1=a2;
