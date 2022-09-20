@@ -3,7 +3,10 @@ package Day2;
 import java.util.Scanner;
 
 public class TshirtorderDetails {
-
+//static
+//static method is first execution
+//we declare public static ----> we call the method as global
+ //static block exection start from when object was created
     int quantity; // arguments & variable
     String colour; // arguments & variable
     char size; // arguments & variable
@@ -11,6 +14,9 @@ public class TshirtorderDetails {
 
     public static Scanner sc = new Scanner(System.in);
     TshirtorderDetails(int count){ // parametrized constructor
+        // once object was created the constructor call automatically
+        // class name method name should be same
+        // constructor dosent have ah return type
         int add = 0;
         for (int i =0; i<count;){ // for loop
 
@@ -26,12 +32,12 @@ public class TshirtorderDetails {
 
             this.size = size;
 
-            if (add<=50){
+            if (add<=50){ // if block (using condtion based block
 
                 System.out.println("Tshirt No.of pieces="+ ordercount + "Tshirt colour= "+ tshirtcolour + "Size of Tshirt = "+ Tshirtsize );
             }
 
-            else {
+            else { // only printing block
 
                 System.out.println("Order reached");
                 i=add-ordercount;
