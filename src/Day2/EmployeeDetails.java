@@ -4,8 +4,12 @@ public class EmployeeDetails {
 
     //Method overloading
     // same class and same method arguments only different
+    // super power of class:
+    // one class to another class we using extends keyword
+    //we declare the class as a final class(){} we can't overloas
 
-    public void student(String name){ // method--->set of the action done.
+    public void student(String name){ // method--->set of the action going to be done.
+        
 
         System.out.println("Employee of the student = "+ name);
     }
@@ -16,7 +20,8 @@ public class EmployeeDetails {
     }
 
     public static void main(String[] args) { // main method--->java initialization start from main method
-//object is used for call the method
+         //object is used for call the method
+        // Java execution always start from main method
         EmployeeDetails ed = new EmployeeDetails();
 
         ed.student("Martin");
